@@ -1,0 +1,59 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  errors:
+    avoid_classes_with_only_static_members: ignore
+  exclude:
+    - lib/generated/**
+    - "**/*.g.dart"
+    - "**/*.gr.dart"
+    - "**/*.config.dart"
+    - "**/*.freezed.dart"
+
+linter:
+  rules:
+    # error rules
+    always_declare_return_types: true
+    avoid_annotating_with_dynamic: true
+    always_use_package_imports: true
+    avoid_dynamic_calls: true
+    avoid_empty_else: true
+
+    # style rules
+    always_put_required_named_parameters_first: true
+    avoid_classes_with_only_static_members: false
+    unnecessary_brace_in_string_interps: true
+    depend_on_referenced_packages: false
+    unnecessary_await_in_return: false
+    lines_longer_than_80_chars: false
+    unnecessary_getters_setters: true
+    constant_identifier_names: false
+    sort_constructors_first: false
+    public_member_api_docs: false
+    require_trailing_commas: true
+    unnecessary_const: true
+    camel_case_types: true
+    implementation_imports: true
+
+    # pub rules
+    sort_pub_dependencies: true
+    package_names: true
+
+dart_code_metrics:
+  anti-patterns:
+    - long-method
+    - long-parameter-list
+  metrics:
+    cyclomatic-complexity: 20
+    maximum-nesting-level: 5
+    number-of-parameters: 4
+    source-lines-of-code: 50
+  metrics-exclude:
+    - test/**
+  rules:
+    - newline-before-return
+    - no-boolean-literal-compare
+    - no-empty-block
+    - prefer-trailing-comma
+    - prefer-conditional-expressions
+    - no-equal-then-else

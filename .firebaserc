@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "javink-san",
+    "javink-san": "javink-san"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}
